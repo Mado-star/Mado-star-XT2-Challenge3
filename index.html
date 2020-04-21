@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SpaceX Dashboard</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/weather-icons.css">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v1.9.0/mapbox-gl.css" rel="stylesheet" />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.9.0/mapbox-gl.js"></script>
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header><h1>SpaceX Dashboard</h1></header>
+
+    <!-- The flexible grid (content) -->
+    <div id="flex-container">
+
+        <div id="restaurant-container">
+            <!-- <div><h1> Restaurants </h1></div> -->
+            <h1> Restaurants </h1><br />
+
+            <div id="restaurants">
+            </div>
+        </div>
+
+
+        <div id="map"> </div>
+
+        <div id="advice-weather-container"> 
+
+            <div id="advice"> 
+                <h1> Landing advice </h1><br />
+                <span id="dot"></span><br /><br />
+                <div id="advice-data"> It is safe to land here! </div>
+            </div>
+
+            <div id="weather">
+                <h1> Weather </h1><br />
+                <div id="weather-icon"><i class="wi wi-owm-201"></i></div><br /><br />
+                <div id="weather-data-grid"> 
+                    <div> Temperature </div> <div id="temp-data"> 20 C </div>
+                    <div> Wind speed  </div> <div id="wind-data"> 24 </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

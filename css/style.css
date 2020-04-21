@@ -1,0 +1,188 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Style the body */
+body {
+    font-family: Arial;
+    margin: 0;
+    background: #353535;
+    color: #F8981D;
+    height: 100%;
+    font-weight: 800;
+}
+
+a {
+    color: #1DF898;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+/* Use a column container for mobile */
+#flex-container {  
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /*justify-content: center;*/
+}
+
+#restaurant-container {
+    text-align: left;
+    padding: 10px;
+    width: 100%;
+    order: 3;
+}
+
+#restaurant-container h1 {
+    text-align: center;
+}
+
+#restaurant-container > div {
+    width: 100%;
+}
+
+#restaurants {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#restaurant-data-grid {
+    display: grid;
+    grid-template-columns: 80px auto;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+#advice-weather-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /*height: 300px;*/
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+/*
+#advice {
+    height: 50%;
+}
+*/
+
+#dot {
+  height: 100px;
+  width:  100px;
+  background-color: green;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+
+
+
+#map {
+    background: #333333;
+    height: 500px;
+    border: 1px solid #000000;
+    width: 100%;
+}
+
+
+.wi {
+    font-size: 80pt;
+}
+
+/*
+.weather-data-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+*/
+
+#weather-data-grid {
+    display: grid;
+    grid-template-columns: 110px 80px;
+    padding: 10px; 
+    text-align: left;
+}
+/*
+.weather-data-grid div {
+    width: 50%;
+}
+*/
+
+
+/* Responsive layout */
+@media screen and (min-width: 720px) {
+
+    #flex-container {
+        flex-direction: row;
+    }
+    
+    /*
+    #flex-container > div {
+        height: 700px;
+    }
+    */
+
+    #restaurant-container {
+        width: 100%;
+        order: 3;
+        flex-direction: row;
+    }
+
+    #advice-weather-container {
+        width: 35%;
+    }
+
+    #map {
+        width: 65%;
+        height: 700px;
+    }
+
+    #restaurants {
+        flex-direction: row;
+    }
+
+    #restaurants > div {
+        width: 33%;
+        padding: 5px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    #flex-container {
+        flex-direction: row;
+    }
+
+    #restaurant-container {
+        width: 20%;
+        order: -1;
+    }
+
+    #advice-weather-container {
+        width: 20%;
+    }
+
+    #map {
+        width: 60%;
+        height: 700px;
+    }
+
+    #restaurants > div {
+        width: 100%;
+    }
+    
+}
